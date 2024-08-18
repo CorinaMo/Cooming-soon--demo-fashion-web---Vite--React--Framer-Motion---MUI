@@ -1,5 +1,5 @@
 # A "coming-soon" demo for a fictional fashion company
-Another exercise. This is made with Node v20.12.2, Vite + React Js + SWC, Material UI & Framer Motion.
+Another exercise. This is made with Node v20.12.2, Vite + React Jss + SWC, Material UI & Framer Motion.
 
 ## React + Vite
 
