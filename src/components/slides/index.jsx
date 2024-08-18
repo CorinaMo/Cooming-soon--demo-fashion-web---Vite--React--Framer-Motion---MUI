@@ -21,8 +21,8 @@ const Slide = ({ section, isVisible }) => {
     >
     <motion.div
       variants={{
-        hidden: { opacity: 0, translateY: 30 },
-        visible: { opacity: 1, translateY: 0 },
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
       }}
       transition={{
         duration: 0.75,

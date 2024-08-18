@@ -9,9 +9,9 @@ export const BarMenu = ({ sections, scrollToSection }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log('styleSlides: ', e.currentTarget)
     setAnchorEl(e.currentTarget);
   };
+  
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -33,9 +33,8 @@ export const BarMenu = ({ sections, scrollToSection }) => {
             menuSections?.map((section) => {
               if (section.name) {
                 return (
-                  <>
+                  <div key={`${section.name}-section`}>
                     <Button
-                      key={`${section.name}-section`}
                       aria-label={`Go to ${section.name} section`}
                       sx={{
                         color: '#FFFFFF', fontFamily: 'Raleway', fontWeight: 600,
@@ -65,6 +64,7 @@ export const BarMenu = ({ sections, scrollToSection }) => {
                       {
                         styleSlides?.map(slide => (
                           <MenuItem
+                            key={`slide-menu-${slide.name}`}
                             aria-label={slide?.name?.replace('_', ' ').toUpperCase()}
                             sx={{
                               fontSize: 13, fontFamily: 'Raleway',
@@ -79,7 +79,7 @@ export const BarMenu = ({ sections, scrollToSection }) => {
                         ))
                       }
                     </Menu>
-                  </>
+                  </div>
                 )
               }
             })}

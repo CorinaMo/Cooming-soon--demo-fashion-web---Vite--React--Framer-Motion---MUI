@@ -7,7 +7,7 @@ import StylesSection_2 from '../sections/section_3_styles/section_3_2_styles_2';
 import StylesSection_3 from '../sections/section_3_styles/section_3_3_styles_3';
 import FooterSection from '../sections/section_4_contact_footer';
 
-export const getSections = () => {
+const getSections = () => {
     const coverRef = useRef(null);
     const aboutRef = useRef(null);
     const stylesRef = useRef(null);
@@ -26,3 +26,5 @@ export const getSections = () => {
 
     return { sections };
 };
+
+export default getSections
