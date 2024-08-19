@@ -25,7 +25,7 @@ export const VideoBackground = ({ source = videoBackground1 }) => {
       }}
     >
       <video ref={videoRef} className='videoTag'
-        autoPlay loop muted playsinline
+        autoPlay loop muted playsInline
         onLoadedData={slowMotion}
         style={{
           objectFit: 'cover',

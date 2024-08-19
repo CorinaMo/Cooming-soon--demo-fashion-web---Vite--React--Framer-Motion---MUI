@@ -1,35 +1,28 @@
-import { Box, Typography } from "@mui/material"
-import { lightGreen } from "@mui/material/colors"
+import { Box } from "@mui/material"
 
 import { DocSections } from "../doc_sections"
+import { Title } from "../doc_title"
+import { P } from "../doc_p_text"
 
 export const Privacy = () => {
-    const pt = { paddingTop: 4 }
 
     return (
         <Box>
-            <Typography
-                variant="h3" component="h1"
-                sx={{
-                    textAlign: 'center', fontFamily: 'Raleway', fontStyle: 'italic', pt: 4, pb: 4,
-                    textDecoration: 'underline', textDecorationColor: lightGreen[500]
-                }}>
-                Our Privacy Policy
-            </Typography>
+            <Title title='Our Privacy Policy' />
 
             <DocSections title="Intro">
                 <b>This is a simple template.</b>
-                <p style={pt}>
-                    [Company Name] operates the Website [Name website], which provides the SERVICE.</p>
-                <p style={pt}>
+                <P>
+                    [Company Name] operates the Website [Name website], which provides the SERVICE.</P>
+                <P>
                     This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Website [Name website].
-                </p>
-                <p style={pt}>
+                </P>
+                <P>
                     If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
-                </p>
-                <p style={pt}>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, unless otherwise defined in this Privacy Policy.
-                </p>
-            </DocSections>
+                </P>
+                <P>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, unless otherwise defined in this Privacy Policy.
+                </P>
+            </DocSections >
 
             <DocSections title="Information Collection and Use">
                 For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.
@@ -52,9 +45,9 @@ export const Privacy = () => {
                     <li>To perform Service-related services; or</li>
                     <li>To assist us in analyzing how our Service is used.</li>
                 </ul>
-                <p style={pt}>
+                <P>
                     We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
-                </p>
+                </P>
             </DocSections>
 
             <DocSections title="Security">
@@ -66,9 +59,9 @@ export const Privacy = () => {
                 <br /><br />
                 <i>Children's Privacy</i>
                 <br />
-                <p style={pt}>
+                <P>
                     Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.
-                </p>
+                </P>
             </DocSections>
 
             <DocSections title="Changes to This Privacy Policy">
@@ -79,6 +72,6 @@ export const Privacy = () => {
                 If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
             </DocSections>
 
-        </Box>
+        </Box >
     )
 }
